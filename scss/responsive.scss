@@ -36,8 +36,6 @@
     a {
       width: 40px;
       height: 40px;
-      background-color: $mainfontcolor;
-      border-radius: 50%;
       margin:0 15px;
       font-size: 20px;
     }
@@ -63,6 +61,40 @@
         color: $maincolor;
         background-color: #FFFFFF;
       }
+    }
+  }
+
+  .text-footer {
+    order: 3;
+    margin-top: 30px;
+    p {
+      @include UTM(normal, 14px, 17px, $mainfontcolor, -0.05em);
+    }
+  }
+
+  .contact {
+    order: 4;
+  }
+
+  .menu-footer {
+    margin-left: 40px;
+  }
+
+  .img-footer {
+    width: 150px;
+    height: auto;
+  }
+
+  .contact-footer {
+    a {
+      width: 30px;
+      height: 30px;
+      margin:0 5px;
+      font-size: 16px;
+    }
+    span {
+      @include UTM(normal, 10px, 10px, $mainfontcolor, -0.05em);
+      margin-top: 10px;
     }
   }
 }
