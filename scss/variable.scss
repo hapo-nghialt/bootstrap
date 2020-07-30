@@ -28,14 +28,11 @@ $mainfontcolor: #ffffff;
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-@mixin UTM($weight,
-$size,
-$color) {
+@mixin UTM($weight, $size, $color) {
   font: $weight $size "UTM-BryantLG";
   color: $color;
 }
 
-@mixin OpenSans($weight,
-$size) {
+@mixin OpenSans($weight, $size) {
   font: $weight $size "Open Sans";
 }
