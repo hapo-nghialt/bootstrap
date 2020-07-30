@@ -1,0 +1,38 @@
+$maincolor: #b2d235;
+$mainfontcolor: #ffffff;
+@font-face {
+  font-family: "UTM";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UTMBryantLG.ttf");
+}
+
+@font-face {
+  font-family: "UTM_B";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/UTMBryantLG_B.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@mixin UTM($weight, $size, $color) {
+  font: $weight $size "UTM-BryantLG";
+  color: $color;
+}
+
+@mixin OpenSans($weight, $size) {
+  font: $weight $size "Open Sans";
+}

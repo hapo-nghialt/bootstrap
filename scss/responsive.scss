@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+  .img-header {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .img-header {
+    width: 150px;
+    height: auto;
+    margin: 0;
+    transform: translateY(-100%);
+  }
+  .nav-menu {
+    a {
+      text-align: center;
+      &:hover {
+        color: $maincolor;
+        background-color: #FFFFFF;
+      }
+    }
+  }
+}
