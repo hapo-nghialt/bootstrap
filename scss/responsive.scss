@@ -1,7 +1,6 @@
 @media only screen and (max-width: 768px) {
   .img-header {
-    width: 300px;
-    height: auto;
+    width: 50%;
     margin: 20px;
   }
 
@@ -48,8 +47,7 @@
 
 @media only screen and (max-width: 426px) {
   .img-header {
-    width: 150px;
-    height: auto;
+    width: 40%;
     margin: 0;
     transform: translateY(-100%);
   }
