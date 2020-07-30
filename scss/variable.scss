@@ -1,0 +1,10 @@
+$maincolor: #b2d235;
+$mainfontcolor: #ffffff;
+@mixin UTM($weight, $size, $color) {
+  font: $weight $size "UTM-BryantLG";
+  color: $color;
+}
+
+@mixin OpenSans($weight, $size) {
+  font: $weight $size "Open Sans";
+}
