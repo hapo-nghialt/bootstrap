@@ -1,31 +1,4 @@
 @import 'variable';
-@font-face {
-  font-family: "UTM";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/UTMBryantLG.ttf");
-}
-
-@font-face {
-  font-family: "UTM_B";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/UTMBryantLG_B.ttf");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  src: url("../fonts/OpenSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/OpenSans-Regular.ttf");
-}
 
 body {
   margin: 0 auto;
@@ -44,8 +17,7 @@ body {
   a {
     text-transform: uppercase;
     color: #505353;
-    @include OpenSans(bold,
-    14px);
+    @include OpenSans(bold, 14px);
     border-radius: 17px;
     &:hover {
       background-color: $maincolor;
