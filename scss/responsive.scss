@@ -39,6 +39,7 @@
       margin:0 15px;
       font-size: 20px;
     }
+
     span {
       @include UTM(normal, 12px, 10px, $mainfontcolor, -0.05em);
       margin-top: 10px;
@@ -92,6 +93,7 @@
       margin:0 5px;
       font-size: 16px;
     }
+    
     span {
       @include UTM(normal, 10px, 10px, $mainfontcolor, -0.05em);
       margin-top: 10px;

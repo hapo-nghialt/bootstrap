@@ -14,6 +14,7 @@ body {
   li {
     margin: 10px;
   }
+  
   a {
     text-transform: uppercase;
     color: #505353;
@@ -64,6 +65,7 @@ body {
     font-weight: bold;
     font-size: 25px;
   }
+
   li:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
@@ -71,6 +73,7 @@ body {
       display: block;
     }
   }
+
   span {
     display: none;
     cursor: pointer;
@@ -84,7 +87,7 @@ body {
   text-align: center;
   p {
     @include UTM(normal, 15px, 18px, $mainfontcolor, -0.05em);
-    padding: 10px
+    padding: 10px;
   }
 }
 
