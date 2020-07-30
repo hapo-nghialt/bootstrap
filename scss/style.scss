@@ -10,19 +10,86 @@ body {
   height: 70px;
 }
 
-.nav-menu {
+.menu-header {
   li {
     margin: 10px;
   }
+  
   a {
     text-transform: uppercase;
     color: #505353;
-    @include OpenSans(bold, 14px);
+    @include OpenSans(bold, 14px, 19px);
     border-radius: 17px;
     &:hover {
       background-color: $maincolor;
       color: $mainfontcolor;
     }
+  }
+}
+
+.footer {
+  padding: 40px;
+  background-color: #505353;
+}
+
+.img-footer {
+  width: 50%;
+  img {
+    width: 100%;
+  } 
+}
+
+.text-footer {
+  p {
+    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+  }
+}
+
+.menu-footer {
+  a {
+    @include UTM(bold, 23px, 25px, $mainfontcolor, -0.05em);
+    text-decoration: none;
+    &:hover {
+      color: $mainfontcolor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-footer {
+  a {
+    width: 50px;
+    height: 50px;
+    background-color: $mainfontcolor;
+    border-radius: 50%;
+    margin:0 20px;
+    color: #505353;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+    span {
+      display: block;
+    }
+  }
+
+  span {
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+  }
+}
+
+.copyright {
+  background-color: #454545;
+  text-align: center;
+  p {
+    @include UTM(normal, 15px, 18px, $mainfontcolor, -0.05em);
+    padding: 10px;
   }
 }
 
