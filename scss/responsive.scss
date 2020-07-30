@@ -4,6 +4,48 @@
     height: auto;
     margin: 20px;
   }
+
+  .footer {
+    padding: 20px
+  }
+
+  .img-footer {
+    width: 170px;
+    height: auto;
+  }
+
+  .text-footer {
+    p {
+      @include UTM(normal, 16px, 20px, $mainfontcolor, -0.05em);
+      margin-top: 10px;
+    }
+  }
+
+  .menu-footer {
+    a {
+      @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+      text-decoration: none;
+      &:hover {
+        color: $mainfontcolor;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .contact-footer {
+    a {
+      width: 40px;
+      height: 40px;
+      background-color: $mainfontcolor;
+      border-radius: 50%;
+      margin:0 15px;
+      font-size: 20px;
+    }
+    span {
+      @include UTM(normal, 12px, 10px, $mainfontcolor, -0.05em);
+      margin-top: 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -13,7 +55,8 @@
     margin: 0;
     transform: translateY(-100%);
   }
-  .nav-menu {
+
+  .menu-header {
     a {
       text-align: center;
       &:hover {
