@@ -4,8 +4,33 @@
     margin: 20px;
   }
 
-  .footer {
-    padding: 20px
+  .banner {
+    height: 350px;
+  }
+
+  .content-banner {
+    .slogan-banner {
+      @include UTM(normal, 30px, 37px, #11114E, -0.05em);
+
+      span {
+        -webkit-text-stroke-width: 2px;
+        letter-spacing: 0;
+      }
+
+      img {
+        width: 35px;
+      }
+    }
+
+    .text-banner {
+      @include UTM(normal, 16px, 20px, #505353, -0.05em);
+    }
+
+    .btn-start {
+      @include UTM(bold, 16px, 20px, $mainfontcolor, -0.05em);
+      -webkit-text-stroke-width: 0px;
+      width: 65%;
+    }
   }
 
   .img-footer {
@@ -15,7 +40,6 @@
   .text-footer {
     p {
       @include UTM(normal, 16px, 20px, $mainfontcolor, -0.05em);
-      margin-top: 10px;
     }
   }
 
@@ -23,6 +47,7 @@
     a {
       @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
       text-decoration: none;
+
       &:hover {
         color: $mainfontcolor;
         text-decoration: underline;
@@ -55,11 +80,43 @@
   .menu-header {
     a {
       text-align: center;
+      
       &:hover {
         color: $maincolor;
         background-color: #FFFFFF;
       }
     }
+  }
+
+  .banner {
+    height: 200px;
+    background-position: right;
+    justify-content: center;
+  }
+
+  .content-banner {
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column;
+
+    .slogan-banner {
+      margin-top: 1em;
+      @include UTM(normal, 25px, 31px, #11114E, -0.05em);
+
+      img {
+        width: 30px;
+      }
+    }
+
+    .btn-start {
+      width: 95%;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em;
+    }
+  }
+
+  .blank-banner {
+    height: 310px;
   }
 
   .text-footer {
