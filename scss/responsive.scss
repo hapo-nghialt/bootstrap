@@ -9,7 +9,6 @@
   }
 
   .content-banner {
-    margin-left: 20px;
     .slogan-banner {
       @include UTM(normal, 30px, 37px, #11114E, -0.05em);
 
@@ -34,10 +33,6 @@
     }
   }
 
-  .footer {
-    padding: 20px
-  }
-
   .img-footer {
     width: 60%;
   }
@@ -45,7 +40,6 @@
   .text-footer {
     p {
       @include UTM(normal, 16px, 20px, $mainfontcolor, -0.05em);
-      margin-top: 10px;
     }
   }
 
