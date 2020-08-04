@@ -52,10 +52,11 @@
   .text-other-courses {
     b {
       -webkit-text-stroke-width: 0.5px;
+      @include UTM(bold, 20px, 25px, $maincolor, -0.05em);
+
       span {
         display: none;
       }
-      @include UTM(bold, 20px, 25px, $maincolor, -0.05em);
     }
   
     p {

@@ -163,13 +163,13 @@ body {
 
 .hapo-title {
   -webkit-text-stroke-width: 2px;
+  @include UTM(bold, 80px, 98px, #11114E, -0.02em);
 
   .underline {
     border-bottom: 6px solid $maincolor;
     border-radius: 3px;
     padding-bottom: 10px;
   }
-  @include UTM(bold, 80px, 98px, #11114E, -0.02em);
 }
 
 .text-allcourses {
