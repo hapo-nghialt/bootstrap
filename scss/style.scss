@@ -67,6 +67,63 @@ body {
 .blank-banner {
   background-image: linear-gradient(white, #E5E5E5);
   height: 170px;
+  margin-bottom: -6rem;
+}
+
+.btn-courses {
+  background-color: $maincolor;
+  border-radius: 22px;
+  box-shadow: inset 0px 1.5px 2px #6F8710;
+  width: 60%;
+  @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+  -webkit-text-stroke-width: 0.5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.main-courses-detail {
+  .img-courses {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0 0;
+    height: 50%;
+  }
+
+  .img-main-courses {
+    max-height: 125px;
+  }
+
+  .left-element {
+    background-color: #3F6185;
+  }
+  
+  .mid-element {
+    background-color: #DC594C;
+  }
+  
+  .right-element {
+    background-color: #556598;
+  }
+}
+
+.text-courses {
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+  b {
+    @include UTM(bold, 30px, 37px, $maincolor, -0.05em);
+    -webkit-text-stroke-width: 1px;
+  }
+
+  p {
+    @include UTM(bold, 14px, 20px, #505353, -0.05em);
+    text-align: center;
+  }
+
+  a {
+    @extend .btn-courses;
+  }
 }
 
 .footer {
