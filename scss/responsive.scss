@@ -34,14 +34,15 @@
   }
 
   .btn-courses {
-    @include UTM(bold, 10px, 12px, $mainfontcolor, -0.05em);
     -webkit-text-stroke-width: 0.2px;
+    @include UTM(bold, 10px, 12px, $mainfontcolor, -0.05em);
   }
 
   .main-courses-detail {
     .img-courses {
       height: 40%;
     }
+
     .img-main-courses {
       max-width: 70%;
     }
@@ -50,20 +51,20 @@
   .text-courses,
   .text-other-courses {
     b {
-      @include UTM(bold, 20px, 25px, $maincolor, -0.05em);
       -webkit-text-stroke-width: 0.5px;
       span {
         display: none;
       }
+      @include UTM(bold, 20px, 25px, $maincolor, -0.05em);
     }
   
     p {
-      @include UTM(bold, 14px, 18px, #505353, -0.05em);
       overflow: hidden;
       text-overflow: ellipsis;
       -webkit-line-clamp: 4;
       display: -webkit-box;
       -webkit-box-orient: vertical;
+      @include UTM(bold, 14px, 18px, #505353, -0.05em);
     }
   }
 
@@ -220,9 +221,11 @@
 
   .other-courses-detail {
     margin-bottom: 8em;
+
     .img-courses {
       height: 55%;
     }
+
     .right-element {
       height: 45%;
     }
@@ -230,6 +233,7 @@
 
   .text-other-courses {
     padding: 1em;
+    
     b {
       margin-bottom: 0.5em;
     }

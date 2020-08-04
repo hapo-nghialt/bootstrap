@@ -113,13 +113,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 
   b {
-    @include UTM(bold, 30px, 37px, $maincolor, -0.05em);
     -webkit-text-stroke-width: 1px;
+    @include UTM(bold, 30px, 37px, $maincolor, -0.05em);
   }
 
   p {
-    @include UTM(bold, 14px, 20px, #505353, -0.05em);
     text-align: center;
+    @include UTM(bold, 14px, 20px, #505353, -0.05em);
   }
 
   a {
@@ -162,27 +162,30 @@ body {
 }
 
 .hapo-title {
-  @include UTM(bold, 80px, 98px, #11114E, -0.02em);
   -webkit-text-stroke-width: 2px;
+
   .underline {
     border-bottom: 6px solid $maincolor;
     border-radius: 3px;
     padding-bottom: 10px;
   }
+  @include UTM(bold, 80px, 98px, #11114E, -0.02em);
 }
 
 .text-allcourses {
   width: 100%;
   text-align: center;
+
   a {
     text-decoration: none;
-    @include UTM(bold, 40px, 49px, #90AB26, 0.02em);
     -webkit-text-stroke-width: 2px;
+    @include UTM(bold, 40px, 49px, #90AB26, 0.02em);
   }
 
   &:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
+
     a {
       text-decoration: none;
       color: #90AB26;
