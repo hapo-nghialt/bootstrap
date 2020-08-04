@@ -178,16 +178,15 @@ body {
     text-decoration: none;
     @include UTM(bold, 40px, 49px, #90AB26, 0.02em);
     -webkit-text-stroke-width: 2px;
-    
-    &:hover {
-      text-decoration: none;
-      color: #90AB26;
-    }
   }
 
   &:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
+    a {
+      text-decoration: none;
+      color: #90AB26;
+    }
   }
 }
 
