@@ -27,7 +27,7 @@
     }
 
     .btn-start {
-      @include UTM(bold, 16px, 20px, $mainfontcolor, -0.05em);
+      @include UTM(bold, 16px, 20px, $main_font_color, -0.05em);
       -webkit-text-stroke-width: 0px;
       width: 65%;
     }
@@ -35,7 +35,7 @@
 
   .btn-courses {
     -webkit-text-stroke-width: 0.2px;
-    @include UTM(bold, 10px, 12px, $mainfontcolor, -0.05em);
+    @include UTM(bold, 10px, 12px, $main_font_color, -0.05em);
   }
 
   .main-courses-detail {
@@ -52,7 +52,7 @@
   .text-other-courses {
     b {
       -webkit-text-stroke-width: 0.5px;
-      @include UTM(bold, 20px, 25px, $maincolor, -0.05em);
+      @include UTM(bold, 20px, 25px, $main_color, -0.05em);
 
       span {
         display: none;
@@ -105,7 +105,7 @@
 
   .whyhapo-left {
     .menu-whyhapo {
-      @include UTM(normal, 16px, 20px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 16px, 20px, $main_font_color, -0.05em);
     }
 
     li {
@@ -119,17 +119,17 @@
 
   .text-footer {
     p {
-      @include UTM(normal, 16px, 20px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 16px, 20px, $main_font_color, -0.05em);
     }
   }
 
   .menu-footer {
     a {
-      @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+      @include UTM(bold, 18px, 22px, $main_font_color, -0.05em);
       text-decoration: none;
 
       &:hover {
-        color: $mainfontcolor;
+        color: $main_font_color;
         text-decoration: underline;
       }
     }
@@ -144,7 +144,7 @@
     }
 
     span {
-      @include UTM(normal, 12px, 10px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 12px, 10px, $main_font_color, -0.05em);
       margin-top: 10px;
     }
   }
@@ -162,7 +162,7 @@
       text-align: center;
       
       &:hover {
-        color: $maincolor;
+        color: $main_color;
         background-color: #FFFFFF;
       }
     }
@@ -200,7 +200,7 @@
   }
 
   .btn-courses {
-    @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+    @include UTM(bold, 18px, 22px, $main_font_color, -0.05em);
     width: 80%;
   }
 
@@ -270,13 +270,13 @@
   .whyhapo {
     .whyhapo-title {
       margin-top: 1em;
-      @include UTM(bold, 40px, 40px, $mainfontcolor, -0.02em);
+      @include UTM(bold, 40px, 40px, $main_font_color, -0.02em);
     }
   }
 
   .whyhapo-left {
     .menu-whyhapo {
-      @include UTM(normal, 14px, 17px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 14px, 17px, $main_font_color, -0.05em);
     }
 
     li {
@@ -292,7 +292,7 @@
     order: 3;
     margin-top: 30px;
     p {
-      @include UTM(normal, 14px, 17px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 14px, 17px, $main_font_color, -0.05em);
     }
   }
 
@@ -313,7 +313,7 @@
     }
 
     span {
-      @include UTM(normal, 10px, 10px, $mainfontcolor, -0.05em);
+      @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
       margin-top: 10px;
       width: 50px;
     }
