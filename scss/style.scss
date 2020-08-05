@@ -62,9 +62,9 @@ body {
   }
 
   a {
-    @extend .btn-start;
     background: $main_color;
     width: 75%;
+    @extend .btn-start;
   }
 }
 
