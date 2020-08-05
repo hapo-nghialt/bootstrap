@@ -193,6 +193,44 @@ body {
   }
 }
 
+.whyhapo {
+  background: url(../images/coverWhyHapoLearn.jpg) no-repeat;
+  background-size: cover;
+
+  .img-whyhapo-left {
+    margin-top: -220px;
+  }
+
+  .whyhapo-title {
+    -webkit-text-stroke-width: 1px;
+    @include UTM(bold, 50px, 61px, $mainfontcolor, -0.02em);
+  }
+}
+
+.whyhapo-left {
+  .whyhapo-title {
+    -webkit-text-stroke-width: 2px;
+    @include UTM(bold, 70px, 86px, $mainfontcolor, -0.02em);
+  }
+
+  .menu-whyhapo {
+    list-style: none;
+    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+  
+    li {
+      padding: 0.7em;
+    }
+  }
+}
+
+.img-whyhapo-right {
+  margin-left: -200px;
+
+  img {
+    height: 544px;
+  }
+}
+
 .footer {
   padding: 40px;
   background-color: #505353;
