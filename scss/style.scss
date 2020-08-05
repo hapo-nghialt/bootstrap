@@ -1,0 +1,263 @@
+@import 'variable';
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "UTM";
+}
+
+.img-header {
+  width: 60%;
+  img {
+    width: 100%;
+  }
+}
+
+.menu-header {
+  li {
+    margin: 10px;
+  }
+  
+  a {
+    text-transform: uppercase;
+    color: #505353;
+    @include OpenSans(bold, 14px, 19px);
+    border-radius: 17px;
+
+    &:hover {
+      background-color: $maincolor;
+      color: $mainfontcolor;
+    }
+  }
+}
+
+.banner {
+  background: url('../images/HapoLearnBanner.png') no-repeat;
+  background-size: cover;
+  height: 655px;
+}
+
+.content-banner {
+  .slogan-banner {
+    @include UTM(bold, 50px, 61px, #11114E, -0.05em);
+    
+    span {
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+
+  .text-banner {
+    @include UTM(normal, 20px, 25px, #505353, -0.05em);
+  }
+
+  .btn-start {
+    background: $maincolor;
+    border-radius: 35px;
+    @include UTM(bold, 30px, 37px, $mainfontcolor, -0.05em);
+    -webkit-text-stroke-width: 1px;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 75%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.blank-banner {
+  background-image: linear-gradient(white, #E5E5E5);
+  height: 170px;
+  margin-bottom: -6rem;
+}
+
+.btn-courses {
+  background-color: $maincolor;
+  border-radius: 22px;
+  box-shadow: inset 0px 1.5px 2px #6F8710;
+  width: 60%;
+  @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+  -webkit-text-stroke-width: 0.5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.main-courses-detail {
+  .img-courses {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0 0;
+    height: 50%;
+  }
+
+  .img-main-courses {
+    max-height: 125px;
+  }
+
+  .left-element {
+    background-color: #3F6185;
+  }
+  
+  .mid-element {
+    background-color: #DC594C;
+  }
+  
+  .right-element {
+    background-color: #556598;
+  }
+}
+
+.text-courses,
+.text-other-courses {
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+  b {
+    -webkit-text-stroke-width: 1px;
+    @include UTM(bold, 30px, 37px, $maincolor, -0.05em);
+  }
+
+  p {
+    text-align: center;
+    @include UTM(bold, 14px, 20px, #505353, -0.05em);
+  }
+
+  a {
+    @extend .btn-courses;
+  }
+}
+
+.other-courses-detail {
+  .img-courses {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0 0;
+    height: 45%;
+  }
+
+  .img-other-courses {
+    max-height: 152px;
+  }
+
+  .left-element {
+    background-color: #24ABE2;
+  }
+  
+  .mid-element {
+    background-color: #E14E40;
+  }
+  
+  .right-element {
+    background-color: #1B75BB;
+  }
+}
+
+.text-other-courses {
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.hapo-title {
+  -webkit-text-stroke-width: 2px;
+  @include UTM(bold, 80px, 98px, #11114E, -0.02em);
+
+  .underline {
+    border-bottom: 6px solid $maincolor;
+    border-radius: 3px;
+    padding-bottom: 10px;
+  }
+}
+
+.text-allcourses {
+  width: 100%;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    @include UTM(bold, 40px, 49px, #90AB26, 0.02em);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+
+    a {
+      text-decoration: none;
+      color: #90AB26;
+    }
+  }
+}
+
+.footer {
+  padding: 40px;
+  background-color: #505353;
+}
+
+.img-footer {
+  width: 50%;
+  img {
+    width: 100%;
+  } 
+}
+
+.text-footer {
+  p {
+    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+  }
+}
+
+.menu-footer {
+  a {
+    @include UTM(bold, 23px, 25px, $mainfontcolor, -0.05em);
+    text-decoration: none;
+    
+    &:hover {
+      color: $mainfontcolor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact-footer {
+  a {
+    width: 50px;
+    height: 50px;
+    background-color: $mainfontcolor;
+    border-radius: 50%;
+    margin:0 20px;
+    color: #505353;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+    span {
+      display: block;
+    }
+  }
+
+  span {
+    display: none;
+    cursor: pointer;
+    text-decoration: underline;
+    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+  }
+}
+
+.copyright {
+  background-color: #454545;
+  text-align: center;
+  p {
+    @include UTM(normal, 15px, 18px, $mainfontcolor, -0.05em);
+    padding: 10px;
+  }
+}
+
+@import 'responsive';
