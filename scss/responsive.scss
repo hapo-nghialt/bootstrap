@@ -103,6 +103,22 @@
     }
   }
 
+  .button-prev {
+    left: 63px;
+  }
+  
+  .button-next {
+    right: 63px;
+  }
+
+  .feedback-detail {
+    margin: 0 4em;
+  }
+
+  .text-feedback {
+    @include UTM(lighter, 18px, 22px, #505353, -0.02em);
+  }
+
   .whyhapo-left {
     .menu-whyhapo {
       @include UTM(normal, 16px, 20px, $main_font_color, -0.05em);
@@ -286,6 +302,47 @@
 
   .img-whyhapo-right {
     margin-left: 0;
+  }
+
+  .button-prev {
+    left: 0;
+  }
+  
+  .button-next {
+    right: 0;
+  }
+
+  .feedback-detail {
+    margin: 0 1.5em;
+
+    .user {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .feedback-content {
+    margin:0.2em -0.5em;
+    
+    &:after {
+      top: 66.9%;
+    }
+  
+    &:before {
+      top: 67.2%;
+    }
+  }
+
+  .user-information {
+    b {
+      @include UTM(bold, 16px, 20px, #11114E, 0);
+    }
+  
+    p {
+      @include UTM(normal, 14px, 17px, #505353, 0);
+    }
   }
 
   .text-footer {
