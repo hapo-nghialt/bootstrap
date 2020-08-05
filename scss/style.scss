@@ -37,6 +37,17 @@ body {
   height: 655px;
 }
 
+.btn-start {
+  border-radius: 35px;
+  -webkit-text-stroke-width: 1px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include UTM(bold, 30px, 37px, $main_font_color, -0.05em);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .content-banner {
   .slogan-banner {
     @include UTM(bold, 50px, 61px, #11114E, -0.05em);
@@ -50,17 +61,10 @@ body {
     @include UTM(normal, 20px, 25px, #505353, -0.05em);
   }
 
-  .btn-start {
+  a {
+    @extend .btn-start;
     background: $main_color;
-    border-radius: 35px;
-    @include UTM(bold, 30px, 37px, $main_font_color, -0.05em);
-    -webkit-text-stroke-width: 1px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 75%;
-
-    &:hover {
-      opacity: 0.8;
-    }
   }
 }
 
@@ -323,6 +327,43 @@ body {
 
   p {
     @include UTM(normal, 16px, 20px, #505353, 0);
+  }
+}
+
+.hapo-member {
+  background: url(../images/background-green.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+
+  .text-member {
+    padding-top: 200px;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+    @include UTM(bold, 60px, 74px, $main_font_color, -0.02em);
+  }
+  
+  .btn-member {
+    padding-bottom: 200px;;
+
+    a {
+      @extend .btn-start;
+      width: 20%;
+      color: $main_color;
+      background-color: $main_font_color;
+    }
+  }
+}
+
+.statistic-content {
+  text-align: center;
+  
+  p {
+    @include UTM(bold, 60px, 74px, #505353, -0.05em)
+  }
+
+  b {
+    @include UTM(bold, 60px, 74px, #B2D235, -0.05em)
   }
 }
 
