@@ -303,10 +303,7 @@ body {
   &:before {
     content: '';
     border: solid transparent;
-    height: 0;
-    width: 0;
     position: absolute;
-    pointer-events: none;
   }
 
   &:after {
