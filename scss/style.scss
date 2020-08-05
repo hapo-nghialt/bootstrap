@@ -25,8 +25,8 @@ body {
     border-radius: 17px;
 
     &:hover {
-      background-color: $maincolor;
-      color: $mainfontcolor;
+      background-color: $main_color;
+      color: $main_font_color;
     }
   }
 }
@@ -51,9 +51,9 @@ body {
   }
 
   .btn-start {
-    background: $maincolor;
+    background: $main_color;
     border-radius: 35px;
-    @include UTM(bold, 30px, 37px, $mainfontcolor, -0.05em);
+    @include UTM(bold, 30px, 37px, $main_font_color, -0.05em);
     -webkit-text-stroke-width: 1px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 75%;
@@ -71,11 +71,11 @@ body {
 }
 
 .btn-courses {
-  background-color: $maincolor;
+  background-color: $main_color;
   border-radius: 22px;
   box-shadow: inset 0px 1.5px 2px #6F8710;
   width: 60%;
-  @include UTM(bold, 18px, 22px, $mainfontcolor, -0.05em);
+  @include UTM(bold, 18px, 22px, $main_font_color, -0.05em);
   -webkit-text-stroke-width: 0.5px;
 
   &:hover {
@@ -114,7 +114,7 @@ body {
 
   b {
     -webkit-text-stroke-width: 1px;
-    @include UTM(bold, 30px, 37px, $maincolor, -0.05em);
+    @include UTM(bold, 30px, 37px, $main_color, -0.05em);
   }
 
   p {
@@ -166,7 +166,7 @@ body {
   @include UTM(bold, 80px, 98px, #11114E, -0.02em);
 
   .underline {
-    border-bottom: 6px solid $maincolor;
+    border-bottom: 6px solid $main_color;
     border-radius: 3px;
     padding-bottom: 10px;
   }
@@ -193,6 +193,44 @@ body {
   }
 }
 
+.whyhapo {
+  background: url(../images/coverWhyHapoLearn.jpg) no-repeat;
+  background-size: cover;
+
+  .img-whyhapo-left {
+    margin-top: -220px;
+  }
+
+  .whyhapo-title {
+    -webkit-text-stroke-width: 1px;
+    @include UTM(bold, 50px, 61px, $main_font_color, -0.02em);
+  }
+}
+
+.whyhapo-left {
+  .whyhapo-title {
+    -webkit-text-stroke-width: 2px;
+    @include UTM(bold, 70px, 86px, $main_font_color, -0.02em);
+  }
+
+  .menu-whyhapo {
+    list-style: none;
+    @include UTM(normal, 20px, 25px, $main_font_color, -0.05em);
+  
+    li {
+      padding: 0.7em;
+    }
+  }
+}
+
+.img-whyhapo-right {
+  margin-left: -200px;
+
+  img {
+    height: 544px;
+  }
+}
+
 .footer {
   padding: 40px;
   background-color: #505353;
@@ -207,17 +245,17 @@ body {
 
 .text-footer {
   p {
-    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+    @include UTM(normal, 20px, 25px, $main_font_color, -0.05em);
   }
 }
 
 .menu-footer {
   a {
-    @include UTM(bold, 23px, 25px, $mainfontcolor, -0.05em);
+    @include UTM(bold, 23px, 25px, $main_font_color, -0.05em);
     text-decoration: none;
     
     &:hover {
-      color: $mainfontcolor;
+      color: $main_font_color;
       text-decoration: underline;
     }
   }
@@ -227,7 +265,7 @@ body {
   a {
     width: 50px;
     height: 50px;
-    background-color: $mainfontcolor;
+    background-color: $main_font_color;
     border-radius: 50%;
     margin:0 20px;
     color: #505353;
@@ -247,7 +285,7 @@ body {
     display: none;
     cursor: pointer;
     text-decoration: underline;
-    @include UTM(normal, 20px, 25px, $mainfontcolor, -0.05em);
+    @include UTM(normal, 20px, 25px, $main_font_color, -0.05em);
   }
 }
 
@@ -255,7 +293,7 @@ body {
   background-color: #454545;
   text-align: center;
   p {
-    @include UTM(normal, 15px, 18px, $mainfontcolor, -0.05em);
+    @include UTM(normal, 15px, 18px, $main_font_color, -0.05em);
     padding: 10px;
   }
 }
