@@ -4,6 +4,10 @@ $(document).ready(function() {
         $('.btn-icon').toggleClass('fa-bars');
     });
 
+    $(".btn-chat").click(() => {
+        $("div.chat-content").fadeToggle();
+    });
+
     function myFunction(x) {
         if (x.matches) {
             $('.comment').slick({

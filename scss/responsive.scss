@@ -193,6 +193,16 @@
       margin-top: 10px;
     }
   }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px;
+
+    .chat-content {
+      bottom: 110px;
+      right: 20px;
+    }
+  }
 }
 
 @media only screen and (max-width: 426px) {
@@ -432,6 +442,16 @@
       margin-top: 10px;
       width: 50px;
       @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
+    }
+  }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px;
+
+    .chat-content {
+      bottom: 110px;
+      right: 20px;
     }
   }
 }

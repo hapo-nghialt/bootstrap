@@ -425,6 +425,79 @@ body {
   }
 }
 
+.toggle-chat {
+  bottom: 50px;
+  right: 40px;
+  
+  .chat-content {
+    display: none;
+    bottom: 130px;
+    right: 40px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    background-color: #FFFFFF;
+    color: #7F7F7F;
+    @include OpenSans(normal, 12px, 16px);
+  }
+
+  .btn-chat {
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-in-out 0.5s;
+    }
+  }
+
+  .btn-cancel {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    color: #000000;
+
+    &:hover {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.hapo-chatbot {
+  p {
+    color: #505353;
+    letter-spacing: -0.02em;
+    background-color: #F1F0F0;
+    border-radius: 15px;
+    @include OpenSans(normal, 12px, 17px);
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+  }
+} 
+
+.login {
+  text-align: center;
+
+  a {
+    background-color: #3184F7;
+    color: $main_font_color;
+    width: 80%;
+    border-radius: 10px;
+
+    &:hover {
+      color: $main_font_color;
+      opacity: 0.8;
+    }
+
+    img {
+      width: 17px;
+    }
+    @include OpenSans(normal, 12px, 16px);
+  }
+} 
+
 .copyright {
   background-color: #454545;
   text-align: center;
