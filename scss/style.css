@@ -1,0 +1,808 @@
+@font-face {
+  font-family: "UTM";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/UTMBryantLG.ttf"); }
+@font-face {
+  font-family: "UTM_B";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/UTMBryantLG_B.ttf"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "UTM"; }
+
+.img-header {
+  width: 60%; }
+  .img-header img {
+    width: 100%; }
+
+.menu-header li {
+  margin: 10px; }
+.menu-header a {
+  text-transform: uppercase;
+  color: #505353;
+  font: bold 14px "Open Sans";
+  line-height: 19px;
+  border-radius: 17px; }
+  .menu-header a:hover {
+    background-color: #b2d235;
+    color: #ffffff; }
+
+.banner {
+  background: url("../images/HapoLearnBanner.png") no-repeat;
+  background-size: cover;
+  height: 655px; }
+
+.btn-start, .content-banner a, .hapo-member .btn-member a {
+  border-radius: 35px;
+  -webkit-text-stroke-width: 1px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font: bold 30px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 37px; }
+  .btn-start:hover, .content-banner a:hover, .hapo-member .btn-member a:hover {
+    opacity: 0.8; }
+
+.content-banner .slogan-banner {
+  font: bold 50px "UTM";
+  color: #11114E;
+  letter-spacing: -0.05em;
+  line-height: 61px; }
+  .content-banner .slogan-banner span {
+    -webkit-text-stroke-width: 2px; }
+.content-banner .text-banner {
+  font: normal 20px "UTM";
+  color: #505353;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
+.content-banner a {
+  background: #b2d235;
+  width: 75%; }
+
+.blank-banner {
+  background-image: linear-gradient(white, #E5E5E5);
+  height: 170px;
+  margin-bottom: -6rem; }
+
+.btn-courses, .text-courses a,
+.text-other-courses a {
+  background-color: #b2d235;
+  border-radius: 22px;
+  box-shadow: inset 0px 1.5px 2px #6F8710;
+  width: 60%;
+  font: bold 18px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 22px;
+  -webkit-text-stroke-width: 0.5px; }
+  .btn-courses:hover, .text-courses a:hover,
+  .text-other-courses a:hover {
+    opacity: 0.8; }
+
+.main-courses-detail .img-courses {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px 15px 0 0;
+  height: 50%; }
+.main-courses-detail .img-main-courses {
+  max-height: 125px; }
+.main-courses-detail .left-element {
+  background-color: #3F6185; }
+.main-courses-detail .mid-element {
+  background-color: #DC594C; }
+.main-courses-detail .right-element {
+  background-color: #556598; }
+
+.text-courses,
+.text-other-courses {
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+  .text-courses b,
+  .text-other-courses b {
+    -webkit-text-stroke-width: 1px;
+    font: bold 30px "UTM";
+    color: #b2d235;
+    letter-spacing: -0.05em;
+    line-height: 37px; }
+  .text-courses p,
+  .text-other-courses p {
+    text-align: center;
+    font: bold 14px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 20px; }
+
+.other-courses-detail .img-courses {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px 15px 0 0;
+  height: 45%; }
+.other-courses-detail .img-other-courses {
+  max-height: 152px; }
+.other-courses-detail .left-element {
+  background-color: #24ABE2; }
+.other-courses-detail .mid-element {
+  background-color: #E14E40; }
+.other-courses-detail .right-element {
+  background-color: #1B75BB; }
+
+.text-other-courses p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
+.hapo-title {
+  -webkit-text-stroke-width: 2px;
+  font: bold 80px "UTM";
+  color: #11114E;
+  letter-spacing: -0.02em;
+  line-height: 98px; }
+  .hapo-title .underline {
+    border-bottom: 6px solid #b2d235;
+    border-radius: 3px;
+    padding-bottom: 10px; }
+
+.text-allcourses {
+  width: 100%;
+  text-align: center; }
+  .text-allcourses a {
+    text-decoration: none;
+    -webkit-text-stroke-width: 2px;
+    font: bold 40px "UTM";
+    color: #90AB26;
+    letter-spacing: 0.02em;
+    line-height: 49px; }
+  .text-allcourses:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s; }
+    .text-allcourses:hover a {
+      text-decoration: none;
+      color: #90AB26; }
+
+.whyhapo {
+  background: url(../images/coverWhyHapoLearn.jpg) no-repeat;
+  background-size: cover; }
+  .whyhapo .img-whyhapo-left {
+    margin-top: -220px; }
+  .whyhapo .whyhapo-title {
+    -webkit-text-stroke-width: 1px;
+    font: bold 50px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 61px; }
+
+.whyhapo-left .whyhapo-title {
+  -webkit-text-stroke-width: 2px;
+  font: bold 70px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 86px; }
+.whyhapo-left .menu-whyhapo {
+  list-style: none;
+  font: normal 20px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
+  .whyhapo-left .menu-whyhapo li {
+    padding: 0.7em; }
+
+.img-whyhapo-right {
+  margin-left: -200px; }
+  .img-whyhapo-right img {
+    height: 544px; }
+
+.text-feedback {
+  text-align: center;
+  font: lighter 25px "UTM";
+  color: #505353;
+  letter-spacing: -0.02em;
+  line-height: 31px; }
+
+.feedback-detail .user img {
+  width: 60px;
+  height: 60px; }
+.feedback-detail .user .fa-star,
+.feedback-detail .user .fa-star-half-alt {
+  color: #F2C54F; }
+
+.button-next,
+.button-prev {
+  position: absolute;
+  top: 33%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #969494;
+  border: 0.5px solid #C4C4C4;
+  border-radius: 50%; }
+  .button-next:hover,
+  .button-prev:hover {
+    background-color: #b2d235; }
+
+.button-prev {
+  z-index: 9; }
+
+.button-next {
+  right: 0; }
+
+.feedback-content {
+  margin: 1em; }
+  .feedback-content .comment-content {
+    padding: 1.5em 1em;
+    width: 100%;
+    border: 0.5px solid #E2E2E2;
+    box-shadow: 1px 1px 5px 0.5px #969694;
+    border-radius: 10px; }
+    .feedback-content .comment-content p {
+      border-left: 5px solid #D9DADC;
+      font: normal 16px "UTM";
+      color: #000000;
+      letter-spacing: -0.05em;
+      line-height: 20px; }
+  .feedback-content:after, .feedback-content:before {
+    content: '';
+    border: solid transparent;
+    position: absolute; }
+  .feedback-content:after {
+    border-top-color: #FFFFFF;
+    border-width: 10px;
+    top: 64%;
+    margin-left: 22px; }
+  .feedback-content:before {
+    border-top-color: #E2E2E2;
+    border-width: 12px;
+    top: 64.3%;
+    margin-left: 20px; }
+
+.user-information b {
+  -webkit-text-stroke-width: 1px;
+  font: bold 20px "UTM";
+  color: #11114E;
+  letter-spacing: 0;
+  line-height: 25px; }
+.user-information p {
+  font: normal 16px "UTM";
+  color: #505353;
+  letter-spacing: 0;
+  line-height: 20px; }
+
+.hapo-member {
+  background: url(../images/background-green.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px; }
+  .hapo-member .text-member {
+    padding-top: 200px;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+    font: bold 60px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 74px; }
+  .hapo-member .btn-member {
+    padding-bottom: 200px; }
+    .hapo-member .btn-member a {
+      width: 20%;
+      color: #b2d235;
+      background-color: #ffffff; }
+
+.statistic-content {
+  text-align: center; }
+  .statistic-content p {
+    font: bold 60px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 74px; }
+  .statistic-content b {
+    font: bold 60px "UTM";
+    color: #B2D235;
+    letter-spacing: -0.05em;
+    line-height: 74px; }
+
+.footer {
+  padding: 40px;
+  background-color: #505353; }
+
+.img-footer {
+  width: 50%; }
+  .img-footer img {
+    width: 100%; }
+
+.text-footer p {
+  font: normal 20px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
+
+.menu-footer a {
+  font: bold 23px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 25px;
+  text-decoration: none; }
+  .menu-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline; }
+
+.contact-footer a {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin: 0 20px;
+  color: #505353;
+  font-weight: bold;
+  font-size: 25px; }
+.contact-footer li:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s; }
+  .contact-footer li:hover span {
+    display: block; }
+.contact-footer span {
+  display: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font: normal 20px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
+
+.toggle-chat {
+  bottom: 50px;
+  right: 40px; }
+  .toggle-chat .chat-content {
+    display: none;
+    bottom: 130px;
+    right: 40px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    background-color: #FFFFFF;
+    color: #7F7F7F;
+    font: normal 12px "Open Sans";
+    line-height: 16px; }
+  .toggle-chat .btn-chat {
+    cursor: pointer; }
+    .toggle-chat .btn-chat:hover {
+      transform: scale(1.1);
+      transition: all ease-in-out 0.5s; }
+  .toggle-chat .btn-cancel {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    color: #000000; }
+    .toggle-chat .btn-cancel:hover {
+      color: #FFFFFF; }
+
+.hapo-chatbot p {
+  color: #505353;
+  letter-spacing: -0.02em;
+  background-color: #F1F0F0;
+  border-radius: 15px;
+  font: normal 12px "Open Sans";
+  line-height: 17px; }
+.hapo-chatbot img {
+  width: 28px;
+  height: 28px; }
+
+.login {
+  text-align: center; }
+  .login a {
+    background-color: #3184F7;
+    color: #ffffff;
+    width: 80%;
+    border-radius: 10px;
+    font: normal 12px "Open Sans";
+    line-height: 16px; }
+    .login a:hover {
+      color: #ffffff;
+      opacity: 0.8; }
+    .login a img {
+      width: 17px; }
+
+.copyright {
+  background-color: #454545;
+  text-align: center; }
+  .copyright p {
+    font: normal 15px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 18px;
+    padding: 10px; }
+
+@media only screen and (max-width: 768px) {
+  .img-header {
+    width: 50%;
+    margin: 20px; }
+
+  .banner {
+    height: 350px; }
+
+  .content-banner .slogan-banner {
+    font: normal 30px "UTM";
+    color: #11114E;
+    letter-spacing: -0.05em;
+    line-height: 37px; }
+    .content-banner .slogan-banner span {
+      -webkit-text-stroke-width: 2px;
+      letter-spacing: 0; }
+    .content-banner .slogan-banner img {
+      width: 35px; }
+  .content-banner .text-banner {
+    font: normal 16px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 20px; }
+  .content-banner .btn-start, .content-banner a, .content-banner .hapo-member .btn-member a, .hapo-member .btn-member .content-banner a {
+    font: bold 16px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 20px;
+    -webkit-text-stroke-width: 0px;
+    width: 65%; }
+
+  .btn-courses, .text-courses a,
+  .text-other-courses a {
+    -webkit-text-stroke-width: 0.2px;
+    font: bold 10px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 12px; }
+
+  .main-courses-detail .img-courses {
+    height: 40%; }
+  .main-courses-detail .img-main-courses {
+    max-width: 70%; }
+
+  .text-courses b,
+  .text-other-courses b {
+    -webkit-text-stroke-width: 0.5px;
+    font: bold 20px "UTM";
+    color: #b2d235;
+    letter-spacing: -0.05em;
+    line-height: 25px; }
+    .text-courses b span,
+    .text-other-courses b span {
+      display: none; }
+  .text-courses p,
+  .text-other-courses p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font: bold 14px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 18px; }
+
+  .other-courses-detail .img-courses {
+    height: 40%; }
+  .other-courses-detail .img-other-courses {
+    max-width: 70%; }
+
+  .text-allcourses a {
+    font: bold 28px "UTM";
+    color: #90AB26;
+    letter-spacing: -0.02em;
+    line-height: 34px; }
+
+  .hapo-title {
+    font: bold 50px "UTM";
+    color: #11114E;
+    letter-spacing: -0.02em;
+    line-height: 61px; }
+
+  .whyhapo .img-whyhapo-left {
+    margin-top: -130px; }
+
+  .img-whyhapo-right {
+    margin-left: -50px; }
+    .img-whyhapo-right img {
+      height: 260px; }
+
+  .button-prev {
+    left: 63px; }
+
+  .button-next {
+    right: 63px; }
+
+  .feedback-detail {
+    margin: 0 4em; }
+
+  .text-feedback {
+    font: lighter 18px "UTM";
+    color: #505353;
+    letter-spacing: -0.02em;
+    line-height: 22px; }
+
+  .hapo-member {
+    margin-top: 50px; }
+    .hapo-member .text-member {
+      padding-top: 50px;
+      -webkit-text-stroke-width: 1px;
+      font: bold 35px "UTM";
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      line-height: 43px; }
+    .hapo-member .btn-member {
+      padding-bottom: 50px; }
+      .hapo-member .btn-member a {
+        width: 35%;
+        font: bold 20px "UTM";
+        color: #90AB26;
+        letter-spacing: -0.05em;
+        line-height: 25px; }
+
+  .statistic-content p {
+    font: bold 40px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 49px; }
+  .statistic-content b {
+    font: bold 40px "UTM";
+    color: #B2D235;
+    letter-spacing: -0.05em;
+    line-height: 49px; }
+
+  .whyhapo-left .menu-whyhapo {
+    font: normal 16px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 20px; }
+  .whyhapo-left li {
+    padding: 0.5em; }
+
+  .img-footer {
+    width: 60%; }
+
+  .text-footer p {
+    font: normal 16px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 20px; }
+
+  .menu-footer a {
+    font: bold 18px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 22px;
+    text-decoration: none; }
+    .menu-footer a:hover {
+      color: #ffffff;
+      text-decoration: underline; }
+
+  .contact-footer a {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    font-size: 20px; }
+  .contact-footer span {
+    font: normal 12px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 10px;
+    margin-top: 10px; }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px; }
+    .toggle-chat .chat-content {
+      bottom: 110px;
+      right: 20px; } }
+@media only screen and (max-width: 426px) {
+  .img-header {
+    width: 40%;
+    margin: 0;
+    transform: translateY(-100%); }
+
+  .menu-header a {
+    text-align: center; }
+    .menu-header a:hover {
+      color: #b2d235;
+      background-color: #FFFFFF; }
+
+  .banner {
+    height: 200px;
+    background-position: right;
+    justify-content: center; }
+
+  .content-banner {
+    transform: translateY(100%);
+    display: flex;
+    flex-direction: column; }
+    .content-banner .slogan-banner {
+      margin-top: 1em;
+      font: normal 25px "UTM";
+      color: #11114E;
+      letter-spacing: -0.05em;
+      line-height: 31px; }
+      .content-banner .slogan-banner img {
+        width: 30px; }
+    .content-banner .btn-start, .content-banner a, .content-banner .hapo-member .btn-member a, .hapo-member .btn-member .content-banner a {
+      width: 95%;
+      padding-top: 0.7em;
+      padding-bottom: 0.7em; }
+
+  .blank-banner {
+    height: 310px; }
+
+  .btn-courses, .text-courses a,
+  .text-other-courses a {
+    font: bold 18px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 22px;
+    width: 80%; }
+
+  .main-courses {
+    margin-top: 2em; }
+    .main-courses .main-courses-content {
+      display: flex;
+      justify-content: center; }
+
+  .main-courses-detail .img-main-courses {
+    height: 95px;
+    margin: 2em; }
+
+  .text-courses b {
+    margin: 0.5em; }
+    .text-courses b span {
+      display: inline; }
+  .text-courses p {
+    padding: 0.5em; }
+  .text-courses a {
+    margin-bottom: 1em; }
+
+  .other-courses .other-courses-content {
+    display: flex;
+    justify-content: center; }
+
+  .other-courses-detail {
+    margin-bottom: 8em; }
+    .other-courses-detail .img-courses {
+      height: 55%; }
+    .other-courses-detail .right-element {
+      height: 45%; }
+
+  .text-other-courses {
+    padding: 1em; }
+    .text-other-courses b {
+      margin-bottom: 0.5em; }
+
+  .hapo-title {
+    font: bold 40px "UTM";
+    color: #11114E;
+    letter-spacing: -0.02em;
+    line-height: 49px; }
+
+  .whyhapo .whyhapo-title {
+    margin-top: 1em;
+    font: bold 40px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    line-height: 40px; }
+
+  .whyhapo-left .menu-whyhapo {
+    font: normal 14px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 17px; }
+  .whyhapo-left li {
+    padding: 0.2em; }
+
+  .img-whyhapo-right {
+    margin-left: 0; }
+
+  .button-prev {
+    left: 0; }
+
+  .button-next {
+    right: 0; }
+
+  .feedback-detail {
+    margin: 0 1.5em; }
+    .feedback-detail .user img {
+      width: 45px;
+      height: 45px; }
+
+  .feedback-content {
+    margin: 0.2em -0.5em; }
+    .feedback-content:after {
+      top: 66.9%; }
+    .feedback-content:before {
+      top: 67.2%; }
+
+  .user-information b {
+    font: bold 16px "UTM";
+    color: #11114E;
+    letter-spacing: 0;
+    line-height: 20px; }
+  .user-information p {
+    font: normal 14px "UTM";
+    color: #505353;
+    letter-spacing: 0;
+    line-height: 17px; }
+
+  .hapo-member {
+    margin-top: 50px; }
+    .hapo-member .text-member {
+      padding-top: 30px;
+      -webkit-text-stroke-width: 0.5px;
+      font: bold 23px "UTM";
+      color: #ffffff;
+      letter-spacing: -0.02em;
+      line-height: 28px; }
+    .hapo-member .btn-member {
+      padding-bottom: 30px; }
+      .hapo-member .btn-member a {
+        width: 50%;
+        -webkit-text-stroke-width: 0;
+        font: bold 18px "UTM";
+        color: #90AB26;
+        letter-spacing: -0.05em;
+        line-height: 22px; }
+
+  .statistic-content p {
+    font: bold 40px "UTM";
+    color: #505353;
+    letter-spacing: -0.05em;
+    line-height: 49px; }
+  .statistic-content b {
+    font: bold 40px "UTM";
+    color: #B2D235;
+    letter-spacing: -0.05em;
+    line-height: 49px; }
+
+  .text-footer {
+    order: 3;
+    margin-top: 30px; }
+    .text-footer p {
+      font: normal 14px "UTM";
+      color: #ffffff;
+      letter-spacing: -0.05em;
+      line-height: 17px; }
+
+  .contact {
+    order: 4; }
+
+  .menu-footer {
+    margin-left: 40px; }
+
+  .contact-footer a {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    font-size: 16px; }
+  .contact-footer span {
+    margin-top: 10px;
+    width: 50px;
+    font: normal 10px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 10px; }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px; }
+    .toggle-chat .chat-content {
+      bottom: 110px;
+      right: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
