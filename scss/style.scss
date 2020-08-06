@@ -49,6 +49,8 @@ body {
 }
 
 .content-banner {
+  margin-left: 6em;
+
   .slogan-banner {
     @include UTM(bold, 50px, 61px, #11114E, -0.05em);
     
@@ -200,6 +202,10 @@ body {
 .whyhapo {
   background: url(../images/coverWhyHapoLearn.jpg) no-repeat;
   background-size: cover;
+
+  .whyhapo-content {
+    margin-top: -10em;
+  }
 
   .img-whyhapo-left {
     margin-top: -220px;
@@ -407,21 +413,6 @@ body {
     color: #505353;
     font-weight: bold;
     font-size: 25px;
-  }
-
-  li:hover {
-    transform: scale(1.1);
-    transition: all ease-in-out 0.5s;
-    span {
-      display: block;
-    }
-  }
-
-  span {
-    display: none;
-    cursor: pointer;
-    text-decoration: underline;
-    @include UTM(normal, 20px, 25px, $main_font_color, -0.05em);
   }
 }
 
