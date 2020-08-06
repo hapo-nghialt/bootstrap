@@ -103,6 +103,51 @@
     }
   }
 
+  .button-prev {
+    left: 63px;
+  }
+  
+  .button-next {
+    right: 63px;
+  }
+
+  .feedback-detail {
+    margin: 0 4em;
+  }
+
+  .text-feedback {
+    @include UTM(lighter, 18px, 22px, #505353, -0.02em);
+  }
+
+  .hapo-member {
+    margin-top: 50px;
+    
+    .text-member {
+      padding-top: 50px;
+      -webkit-text-stroke-width: 1px;
+      @include UTM(bold, 35px, 43px, $main_font_color, -0.02em);
+    }
+    
+    .btn-member {
+      padding-bottom: 50px;;
+
+      a {
+        width: 35%;
+        @include UTM(bold, 20px, 25px, #90AB26, -0.05em);
+      }
+    }
+  }
+
+  .statistic-content {
+    p {
+      @include UTM(bold, 40px, 49px, #505353, -0.05em)
+    }
+  
+    b {
+      @include UTM(bold, 40px, 49px, #B2D235, -0.05em)
+    }
+  }
+
   .whyhapo-left {
     .menu-whyhapo {
       @include UTM(normal, 16px, 20px, $main_font_color, -0.05em);
@@ -146,6 +191,16 @@
     span {
       @include UTM(normal, 12px, 10px, $main_font_color, -0.05em);
       margin-top: 10px;
+    }
+  }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px;
+
+    .chat-content {
+      bottom: 110px;
+      right: 20px;
     }
   }
 }
@@ -288,6 +343,77 @@
     margin-left: 0;
   }
 
+  .button-prev {
+    left: 0;
+  }
+  
+  .button-next {
+    right: 0;
+  }
+
+  .feedback-detail {
+    margin: 0 1.5em;
+
+    .user {
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .feedback-content {
+    margin:0.2em -0.5em;
+    
+    &:after {
+      top: 66.9%;
+    }
+  
+    &:before {
+      top: 67.2%;
+    }
+  }
+
+  .user-information {
+    b {
+      @include UTM(bold, 16px, 20px, #11114E, 0);
+    }
+  
+    p {
+      @include UTM(normal, 14px, 17px, #505353, 0);
+    }
+  }
+
+  .hapo-member {
+    margin-top: 50px;
+    
+    .text-member {
+      padding-top: 30px;
+      -webkit-text-stroke-width: 0.5px;
+      @include UTM(bold, 23px, 28px, $main_font_color, -0.02em);
+    }
+    
+    .btn-member {
+      padding-bottom: 30px;;
+
+      a {
+        width: 50%;
+        -webkit-text-stroke-width: 0;
+        @include UTM(bold, 18px, 22px, #90AB26, -0.05em);
+      }
+    }
+  }
+
+  .statistic-content {
+    p {
+      @include UTM(bold, 40px, 49px, #505353, -0.05em)
+    }
+  
+    b {
+      @include UTM(bold, 40px, 49px, #B2D235, -0.05em)
+    }
+  }
+
   .text-footer {
     order: 3;
     margin-top: 30px;
@@ -313,9 +439,19 @@
     }
 
     span {
-      @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
       margin-top: 10px;
       width: 50px;
+      @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
+    }
+  }
+
+  .toggle-chat {
+    bottom: 30px;
+    right: 20px;
+
+    .chat-content {
+      bottom: 110px;
+      right: 20px;
     }
   }
 }
