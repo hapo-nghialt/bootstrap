@@ -56,23 +56,21 @@ body {
   .btn-start:hover, .content-banner a:hover, .hapo-member .btn-member a:hover {
     opacity: 0.8; }
 
-.content-banner {
-  margin-left: 6em; }
-  .content-banner .slogan-banner {
-    font: bold 50px "UTM";
-    color: #11114E;
-    letter-spacing: -0.05em;
-    line-height: 61px; }
-    .content-banner .slogan-banner span {
-      -webkit-text-stroke-width: 2px; }
-  .content-banner .text-banner {
-    font: normal 20px "UTM";
-    color: #505353;
-    letter-spacing: -0.05em;
-    line-height: 25px; }
-  .content-banner a {
-    background: #b2d235;
-    width: 75%; }
+.content-banner .slogan-banner {
+  font: bold 50px "UTM";
+  color: #11114E;
+  letter-spacing: -0.05em;
+  line-height: 61px; }
+  .content-banner .slogan-banner span {
+    -webkit-text-stroke-width: 2px; }
+.content-banner .text-banner {
+  font: normal 20px "UTM";
+  color: #505353;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
+.content-banner a {
+  background: #b2d235;
+  width: 75%; }
 
 .blank-banner {
   background-image: linear-gradient(white, #E5E5E5);
@@ -177,8 +175,6 @@ body {
 .whyhapo {
   background: url(../images/coverWhyHapoLearn.jpg) no-repeat;
   background-size: cover; }
-  .whyhapo .whyhapo-content {
-    margin-top: -10em; }
   .whyhapo .img-whyhapo-left {
     margin-top: -220px; }
   .whyhapo .whyhapo-title {
@@ -353,6 +349,19 @@ body {
   color: #505353;
   font-weight: bold;
   font-size: 25px; }
+.contact-footer li:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s; }
+  .contact-footer li:hover span {
+    display: block; }
+.contact-footer span {
+  display: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font: normal 20px "UTM";
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 25px; }
 
 .toggle-chat {
   bottom: 50px;
@@ -584,6 +593,12 @@ body {
     height: 40px;
     margin: 0 15px;
     font-size: 20px; }
+  .contact-footer span {
+    font: normal 12px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 10px;
+    margin-top: 10px; }
 
   .toggle-chat {
     bottom: 30px;
@@ -775,6 +790,13 @@ body {
     height: 30px;
     margin: 0 5px;
     font-size: 16px; }
+  .contact-footer span {
+    margin-top: 10px;
+    width: 50px;
+    font: normal 10px "UTM";
+    color: #ffffff;
+    letter-spacing: -0.05em;
+    line-height: 10px; }
 
   .toggle-chat {
     bottom: 30px;
