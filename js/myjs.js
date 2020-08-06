@@ -8,31 +8,26 @@ $(document).ready(function() {
         $("div.chat-content").fadeToggle();
     });
 
-    function myFunction(x) {
-        if (x.matches) {
-            $('.comment').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows:true,
-                prevArrow:'<button type="button" class="button-prev fas fa-angle-left"></button>',
-                nextArrow:'<button type="button" class="button-next fas fa-angle-right"></button>',
-            });
-        } else {
-            $('.comment').slick({
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows:true,
-                prevArrow:'<button type="button" class="button-prev fas fa-angle-left"></button>',
-                nextArrow:'<button type="button" class="button-next fas fa-angle-right"></button>',
-            });
-        }
-    }
-      
-    var x = window.matchMedia("(max-width: 768px)")
-    myFunction(x) 
-    x.addListener(myFunction)
+    $('.comment').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        autoplay: true,
+        autoplaySpeed : 3000,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        prevArrow:'<button type="button" class="button-prev fas fa-angle-left"></button>',
+                nextArrow:'<button type="button" class="button-next fas fa-angle-right"></button>', 
+  
+        responsive: [
+          {
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
 });
