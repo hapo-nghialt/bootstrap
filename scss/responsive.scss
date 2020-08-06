@@ -187,6 +187,11 @@
       margin:0 15px;
       font-size: 20px;
     }
+
+    span {
+      @include UTM(normal, 12px, 10px, $main_font_color, -0.05em);
+      margin-top: 10px;
+    }
   }
 
   .toggle-chat {
@@ -431,6 +436,12 @@
       height: 30px;
       margin:0 5px;
       font-size: 16px;
+    }
+
+    span {
+      margin-top: 10px;
+      width: 50px;
+      @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
     }
   }
 
