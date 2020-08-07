@@ -9,6 +9,8 @@
   }
 
   .content-banner {
+    margin-left: 2em;
+
     .slogan-banner {
       @include UTM(normal, 30px, 37px, #11114E, -0.05em);
 
