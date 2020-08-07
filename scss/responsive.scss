@@ -9,6 +9,8 @@
   }
 
   .content-banner {
+    margin-left: 2em;
+
     .slogan-banner {
       @include UTM(normal, 30px, 37px, #11114E, -0.05em);
 
@@ -91,7 +93,25 @@
 
   .whyhapo {
     .img-whyhapo-left {
-      margin-top: -130px;
+      margin-top: -160px;
+    }
+
+    .whyhapo-content {
+      margin-top: -1em;
+    }
+  }
+
+  .whyhapo-left {
+    .menu-whyhapo {
+      li {
+        padding: 0.5em;
+
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 0.5em;
+        }
+      }
     }
   }
 
@@ -187,11 +207,6 @@
       margin:0 15px;
       font-size: 20px;
     }
-
-    span {
-      @include UTM(normal, 12px, 10px, $main_font_color, -0.05em);
-      margin-top: 10px;
-    }
   }
 
   .toggle-chat {
@@ -233,6 +248,7 @@
     transform: translateY(100%);
     display: flex;
     flex-direction: column;
+    margin-left: 0;
 
     .slogan-banner {
       margin-top: 1em;
@@ -324,8 +340,12 @@
 
   .whyhapo {
     .whyhapo-title {
-      margin-top: 1em;
+      margin: 1em 0 1em -1em;
       @include UTM(bold, 40px, 40px, $main_font_color, -0.02em);
+    }
+
+    .img-whyhapo-left {
+      margin-top: -110px;
     }
   }
 
@@ -436,12 +456,6 @@
       height: 30px;
       margin:0 5px;
       font-size: 16px;
-    }
-
-    span {
-      margin-top: 10px;
-      width: 50px;
-      @include UTM(normal, 10px, 10px, $main_font_color, -0.05em);
     }
   }
 
