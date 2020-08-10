@@ -46,7 +46,7 @@ body {
 }
 
 .content-banner {
-  margin-left: 6em;
+  margin-left: 5em;
 
   .slogan-banner {
     @include UTM(bold, 50px, 61px, #11114E, -0.05em);
@@ -224,6 +224,10 @@ body {
     list-style: none;
     @include UTM(normal, 20px, 25px, $main_font_color, -0.05em);
   
+    img {
+      margin-bottom: 5px;
+    }
+
     li {
       padding: 0.7em;
     }
@@ -255,6 +259,13 @@ body {
   }
 }
 
+.btn-header:focus,
+.button-next:focus,
+.button-prev:focus,
+.feedback-detail:focus {
+  outline: none;
+}
+
 .button-next,
 .button-prev {
   position: absolute;
@@ -268,10 +279,7 @@ body {
   color: #969494;
   border: 0.5px solid #C4C4C4;
   border-radius: 50%;
-
-  &:hover {
-    background-color: $main_color;
-  }
+  outline: none;
 }
 
 .button-prev {
@@ -352,8 +360,13 @@ body {
       width: 377px;
       color: $main_color;
       background-color: $main_font_color;
+      border: none;
     }
   }
+}
+
+.hapo-statistic {
+  padding: 0 8em;
 }
 
 .statistic-content {
@@ -375,6 +388,7 @@ body {
 
 .img-footer {
   width: 50%;
+
   img {
     width: 100%;
   } 
@@ -388,8 +402,8 @@ body {
 
 .menu-footer {
   a {
-    @include UTM(bold, 23px, 25px, $main_font_color, -0.05em);
     text-decoration: none;
+    @include UTM(bold, 23px, 25px, $main_font_color, -0.05em);
     
     &:hover {
       color: $main_font_color;
@@ -404,7 +418,7 @@ body {
     height: 50px;
     background-color: $main_font_color;
     border-radius: 50%;
-    margin:0 20px;
+    margin: 10px 20px;
     color: #505353;
     font-weight: bold;
     font-size: 25px;
