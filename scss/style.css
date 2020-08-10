@@ -55,7 +55,7 @@ body {
     opacity: 0.8; }
 
 .content-banner {
-  margin-left: 6em; }
+  margin-left: 5em; }
   .content-banner .slogan-banner {
     font: bold 50px "UTM";
     color: #11114E;
@@ -198,6 +198,8 @@ body {
   color: #ffffff;
   letter-spacing: -0.05em;
   line-height: 25px; }
+  .whyhapo-left .menu-whyhapo img {
+    margin-bottom: 5px; }
   .whyhapo-left .menu-whyhapo li {
     padding: 0.7em; }
 
@@ -218,6 +220,12 @@ body {
 .feedback-detail .user .fa-star-half-alt {
   color: #F2C54F; }
 
+.btn-header:focus,
+.button-next:focus,
+.button-prev:focus,
+.feedback-detail:focus {
+  outline: none; }
+
 .button-next,
 .button-prev {
   position: absolute;
@@ -230,10 +238,8 @@ body {
   background: #FFFFFF;
   color: #969494;
   border: 0.5px solid #C4C4C4;
-  border-radius: 50%; }
-  .button-next:hover,
-  .button-prev:hover {
-    background-color: #b2d235; }
+  border-radius: 50%;
+  outline: none; }
 
 .button-prev {
   z-index: 9; }
@@ -300,7 +306,11 @@ body {
     .hapo-member .btn-member a {
       width: 377px;
       color: #b2d235;
-      background-color: #ffffff; }
+      background-color: #ffffff;
+      border: none; }
+
+.hapo-statistic {
+  padding: 0 8em; }
 
 .statistic-content {
   text-align: center; }
@@ -331,11 +341,11 @@ body {
   line-height: 25px; }
 
 .menu-footer a {
+  text-decoration: none;
   font: bold 23px "UTM";
   color: #ffffff;
   letter-spacing: -0.05em;
-  line-height: 25px;
-  text-decoration: none; }
+  line-height: 25px; }
   .menu-footer a:hover {
     color: #ffffff;
     text-decoration: underline; }
@@ -345,7 +355,7 @@ body {
   height: 50px;
   background-color: #ffffff;
   border-radius: 50%;
-  margin: 0 20px;
+  margin: 10px 20px;
   color: #505353;
   font-weight: bold;
   font-size: 25px; }
@@ -513,7 +523,7 @@ body {
   .img-whyhapo-right {
     margin-left: -50px; }
     .img-whyhapo-right img {
-      height: 260px; }
+      height: 250px; }
 
   .button-prev {
     left: 63px; }
@@ -547,6 +557,9 @@ body {
         color: #90AB26;
         letter-spacing: -0.05em;
         line-height: 25px; }
+
+  .hapo-statistic {
+    padding: 0; }
 
   .statistic-content p {
     font: bold 40px "UTM";
@@ -589,7 +602,7 @@ body {
   .contact-footer a {
     width: 40px;
     height: 40px;
-    margin: 0 15px;
+    margin: 10px 15px;
     font-size: 20px; }
 
   .toggle-chat {
@@ -600,9 +613,7 @@ body {
       right: 20px; } }
 @media only screen and (max-width: 426px) {
   .img-header {
-    width: 40%;
-    margin: 0;
-    transform: translateY(-100%); }
+    width: 40%; }
 
   .menu-header a {
     text-align: center; }
@@ -720,9 +731,9 @@ body {
   .feedback-content {
     margin: 0.2em -0.5em; }
     .feedback-content:after {
-      top: 66.9%; }
+      top: 66.8%; }
     .feedback-content:before {
-      top: 67.2%; }
+      top: 67.1%; }
 
   .user-information b {
     font: bold 16px "UTM";
@@ -765,9 +776,15 @@ body {
     letter-spacing: -0.05em;
     line-height: 49px; }
 
+  .footer {
+    padding-top: 1em; }
+
   .text-footer {
     order: 3;
     margin-top: 30px; }
+    .text-footer img {
+      width: 150px;
+      margin-bottom: 0.5em; }
     .text-footer p {
       font: normal 14px "UTM";
       color: #ffffff;
@@ -779,11 +796,16 @@ body {
 
   .menu-footer {
     margin-left: 40px; }
+    .menu-footer a {
+      font: bold 16px "UTM";
+      color: #ffffff;
+      letter-spacing: -0.05em;
+      line-height: 21px; }
 
   .contact-footer a {
     width: 30px;
     height: 30px;
-    margin: 0 5px;
+    margin: 10px 5px;
     font-size: 16px; }
 
   .toggle-chat {
